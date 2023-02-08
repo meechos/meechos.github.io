@@ -2,7 +2,7 @@
 permalink: /
 layout: home
 title: Hey anon, 👋🏻
-list_title: My blog posts
+list_title: ' '
 ---
 
 I am a neuroengineer and AI scientist with a background in physics and digital signal processing. I am interested in decoding brain function using data driven paradigms in order to inform Large Scale Models.
