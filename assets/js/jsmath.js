@@ -1,0 +1,1 @@
+<script src="path/to/jsmath.js></script>
