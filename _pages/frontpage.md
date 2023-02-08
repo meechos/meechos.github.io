@@ -1,4 +1,3 @@
-<img src="../assets/imgs/Cronos_logo.png" width="100%">
 
 ---
 permalink: /
@@ -6,6 +5,8 @@ layout: home
 title: Hey anon 👋🏻
 list_title: My blog posts
 ---
+
+<img src="../assets/imgs/Cronos_logo.png" width="100%">
 
 I am a neuroengineer and AI scientist with a background in physics and digital signal processing. I am interested in decoding brain function using data driven paradigms in order to inform Large Scale Models.
 I am the developer of [Neurocraft, the Microscale Neuroengineering Platform](https://github.com/Neurocraft/neurocraft).
