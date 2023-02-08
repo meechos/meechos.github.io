@@ -79,7 +79,7 @@ Image source: https://numpy.org/
 ## Application: Euclidean Distance Matrix
 To calculate the euclidean distance matrix in a dataset (m observations, n variables), we would have to iterate over the the rows/observations of the data matrix so that a value is calculated all possible combinations of observations based on the following equation:
 
-${\displaystyle {\begin{aligned}d(\mathbf {p} ,\mathbf {q}) &={\sqrt {\sum _{i=1}^{n}(q_{i}-p_{i})^{2}}}.\end{aligned}}}$
+$${\displaystyle {\begin{aligned}d(\mathbf {p} ,\mathbf {q}) &={\sqrt {\sum _{i=1}^{n}(q_{i}-p_{i})^{2}}}.\end{aligned}}}$$
 
 We will compare for-loop and a mattrix multiplication operation in terms of speed.
 
