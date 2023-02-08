@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Broadcasting_101
+title: Array Broadcasting | A visual explanation with code
 permalink: /Broadcasting_101
 ---
 
