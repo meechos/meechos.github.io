@@ -3,8 +3,8 @@ description: Posts as sanity checks
 author: "Dimitris Fotis Sakellariou"
 
 theme: minima
-# markdown: kramdown
-# mathjax: true
+markdown: kramdown
+mathjax: true
 
 base_url: #/gh-pages-minima-starter
 
