@@ -1,6 +1,6 @@
 ---
 layout: page
-mathjax: true
+# mathjax: true
 title: Array Broadcasting, a visual explanation
 permalink: /Broadcasting_101
 ---
