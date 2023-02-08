@@ -1,1 +1,1 @@
-<script src="path/to/jsmath.js></script>
+{/* <script src="path/to/jsmath.js></script> */}
