@@ -1,7 +1,14 @@
 ---
-title: "Array Broadcasting: A visual explanation with code."
-date: 2020-03-22
-layout: post
+jupyter:
+  colab:
+    name: Broadcasting_101.ipynb
+  kernelspec:
+    display_name: Python 3
+    name: python3
+  language_info:
+    name: python
+  nbformat: 4
+  nbformat_minor: 0
 ---
 
 <div class="cell markdown" id="DDN_5ck6ZMcl">
