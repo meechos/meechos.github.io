@@ -4,6 +4,7 @@ author: "Dimitris Fotis Sakellariou"
 
 theme: minima
 markdown: kramdown
+mathjax: true
 
 base_url: #/gh-pages-minima-starter
 
