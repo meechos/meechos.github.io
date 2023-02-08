@@ -4,6 +4,7 @@ layout: page
 title: About me
 ---
 
-More details about me on this page with links to my social media profiles and so on.
+I am a neuroengineer and AI scientist with a background in physics and digital signal processing. I am interested in decoding brain function using data driven paradigms in order to inform Large Scale Models.
+I am the developer of Neurocraft, the Microscale Neuroengineering Platform.
 
-![](https://www.jorgesanz.net/assets/imgs/me/jsanz_small4.png)
+![](../assets/imgs/Cronos_logo.png)
