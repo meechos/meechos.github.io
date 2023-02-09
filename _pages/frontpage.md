@@ -10,7 +10,9 @@ I am the developer of [Neurocraft, the Microscale Neuroengineering Platform](htt
 
 <!-- ![](../assets/imgs/prof_pic.jpg) -->
 
-<img src="../assets/imgs/prof_pic.jpg"  width="30%">
+<p align="center">
+  <img src="../assets/imgs/prof_pic.jpg"  width="30%"/>
+</p>
 
 [gh-site]: https://pages.github.com/
 [minima]: https://github.com/jekyll/minima/tree/2.5-stable
