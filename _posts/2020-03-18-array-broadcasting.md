@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 mathjax: true
 title: Array Broadcasting, a visual explanation
 permalink: /Broadcasting_101

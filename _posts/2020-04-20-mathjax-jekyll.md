@@ -1,7 +1,7 @@
 ---
 title: "Enable mathjax in your jekyll page"
 date: 2020-04-20
-layout: post
+layout: page
 ---
 
 Quick note on highlighting how I enabled mathjax on my jekyll blog.
