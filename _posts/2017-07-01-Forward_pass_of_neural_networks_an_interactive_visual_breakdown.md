@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Forward_pass_of_neural_networks_an_interactive_visual_breakdown
-permalink: /Forward_pass_of_neural_networks_an_interactive_visual_breakdown
+title: Forward pass, an interactive brekdown
+permalink: /Forward_pass
 ---
 
 # A Basic Neural Network
@@ -218,8 +218,3 @@ References
 - http://neuralnetworksanddeeplearning.com/
 - ["Approximation by superpositions of a sigmoidal function"](https://web.njit.edu/~usman/courses/cs675_fall18/10.1.1.441.7873.pdf) Cybenko, G. (1989).
 
-
-
-```python
-
-```

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Function_approximator_nn
+title: NN as unversal function approximator
 permalink: /Function_approximator_nn
 ---
 
@@ -157,7 +157,7 @@ plt.scatter(x, h, color='red', s=10)
 
 
 
-![png]({{ site.baseurl }}/Function_approximator_nn_files/Function_approximator_nn_4_1.png){: .center-image }
+![png](/_posts/Function_approximator_nn_files/Function_approximator_nn_4_1.png)
 
 #### References
 [1] Cybenko, G. (1989). "Approximation by superpositions of a sigmoidal function". Mathematics of Control, Signals, and Systems. 2 (4): 303–314. CiteSeerX 10.1.1.441.7873. doi:10.1007/BF02551274. S2CID 3958369
