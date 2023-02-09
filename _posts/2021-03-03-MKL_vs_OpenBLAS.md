@@ -4,10 +4,9 @@ title: Accelerated Linear Algebra Libraries (MKL vs OpenBLAS)
 permalink: /MKL_vs_OpenBLAS
 ---
 
-# 
+Accelerated Linear Algebra Libraries, also mostly known as Basic Linear Algebra Subprograms (BLAS), are a set of low-level routines for performing common linear algebra operations such as vector addition, scalar multiplication, dot products, linear combinations, and matrix multiplication. The implementations are often optimized for speed for example by taking advantage of special floating point hardware such as vector registers or SIMD instructions. Using them can bring substantial performance benefits. 
 
 ## 1. BLAS background
-Accelerated Linear Algebra Libraries, also mostly known as Basic Linear Algebra Subprograms (BLAS), are a set of low-level routines for performing common linear algebra operations such as vector addition, scalar multiplication, dot products, linear combinations, and matrix multiplication. The implementations are often optimized for speed for example by taking advantage of special floating point hardware such as vector registers or SIMD instructions. Using them can bring substantial performance benefits. 
 
 BLAS originated as a Fortran library in 1979 and its interface was standardized by the BLAS Technical (BLAST) Forum, whose latest BLAS report can be found on the netlib website. This Fortran library is known as the reference implementation (sometimes confusingly referred to as the BLAS library) and is not optimized for speed but is in the public domain.
 
@@ -17,8 +16,6 @@ Most libraries that offer linear algebra routines conform to the BLAS interface,
 - OpenBLAS is an open-source library that is hand-optimized for many of the popular architectures. The LINPACK benchmarks rely heavily on the BLAS routine gemm for its performance measurements.
 
 Many numerical software applications use BLAS-compatible libraries to do linear algebra computations, including GNU Octave, MATLAB, NumPy, R and Julia.
-
-
 
 ## 2 Benchmarking in Numpy
 NumPy doesn’t depend on any other Python packages, however, it does depend on an accelerated linear algebra library - typically Intel MKL or OpenBLAS. The used BLAS can affect performance, behavior and size on disk:
