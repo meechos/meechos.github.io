@@ -1,11 +1,9 @@
 ---
 layout: page
-mathjax: true
+# mathjax: true
 title: Array Broadcasting, a visual explanation
 permalink: /Broadcasting_101
 ---
-
-# Array Broadcasting: A visual explanation with code.
 
 The term broadcasting describes how NumPy treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is “broadcast” across the larger array so that they have compatible shapes. 
 
