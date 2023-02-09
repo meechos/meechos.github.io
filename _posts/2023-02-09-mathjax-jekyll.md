@@ -2,6 +2,7 @@
 title: "Enable MathJax in your Jekyll page"
 date: 2020-04-20
 layout: page
+tags: Other
 ---
 
 Jekyll with mathematical annotation is tricky bussiness. If you're having trouble, try following
