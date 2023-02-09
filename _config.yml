@@ -4,10 +4,10 @@ author: "Dimitris Fotis Sakellariou"
 
 theme: minima
 markdown: kramdown
-# mathjax: true
+mathjax: true
 kramdown:
   math_engine: katex
-  
+
 base_url: #/gh-pages-minima-starter
 
 # Minima social links
