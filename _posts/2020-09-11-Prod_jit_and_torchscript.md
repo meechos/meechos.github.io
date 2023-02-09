@@ -426,10 +426,6 @@ for _ in range(20):
 
 ```python
 
-```
-
-```python
-
 y
 ```
 

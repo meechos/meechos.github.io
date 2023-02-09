@@ -1,5 +1,5 @@
 ---
-title: "Enable mathjax in your jekyll page"
+title: "Enable MathJax in your Jekyll page"
 date: 2020-04-20
 layout: page
 ---
