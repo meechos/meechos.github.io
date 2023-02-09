@@ -2,6 +2,7 @@
 layout: page
 title: Forward pass, an interactive breakdown
 permalink: /Forward_pass
+tags: Deep Learning
 ---
 
 > ❗️ Note this post is not interactive, but you can the respective jupyter notebook a spin [here](https://github.com/meechos/Deep-Learning-TIL/blob/main/nbs/Forward_pass_of_neural_networks_an_interactive_visual_breakdown.ipynb).

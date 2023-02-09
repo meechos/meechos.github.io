@@ -2,6 +2,7 @@
 layout: page
 title:  Neural Networks as Universal Function Approximators
 permalink: /Function_approximator_nn
+tags: Deep Learning
 ---
 
 [The universal approximation theorem](https://en.wikipedia.org/wiki/Universal_approximation_theorem) states that a feed-forward neural network with a single hidden layer containing a finite number of neurons can approximate any continuous function (provided some assumptions on the activation function are met) to an arbitrary precision [1]. If the function jumps around or has large gaps, we won't be able to approximate it.
@@ -155,7 +156,7 @@ plt.scatter(x, h, color='red', s=10)
 
 
 
-![png](/_posts/Function_approximator_nn_files/Function_approximator_nn_4_1.png)
+![png](_posts/Function_approximator_nn_files/Function_approximator_nn_4_1.png)
 
 #### References
 [1] Cybenko, G. (1989). "Approximation by superpositions of a sigmoidal function". Mathematics of Control, Signals, and Systems. 2 (4): 303–314. CiteSeerX 10.1.1.441.7873. doi:10.1007/BF02551274. S2CID 3958369
