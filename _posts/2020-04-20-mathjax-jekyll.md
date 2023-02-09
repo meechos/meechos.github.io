@@ -4,27 +4,51 @@ date: 2020-04-20
 layout: page
 ---
 
-Quick note on highlighting how I enabled mathjax on my jekyll blog.
+Jekyll with mathematical annotation is tricky bussiness. If you're having trouble, try following
+my recipe below.
 
-1. Add the following at the top of `_layouts/default.html` (if there isn't one, just create it)
+---
 
+Append the following script before the `</head>` inside of `_layouts/default.html` (if there isn't one, just create it):
 ```
-<script type="text/javascript" async 
-src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
-config=TeX-AMS-MML_HTMLorMML"></script>
-
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+      
+  <script type="text/javascript"
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
 ```
-2. In the `_config.yml`, add or make sure the following exist:
-```
-markdown: kramdown
-mathjax: true
-```
-For renedering Mathjax:
 
-- inline, use `\( ... \)`,
-- block, use `\[ ... \]`.
+The above code injection consists of two parts:
 
-The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become \\( ... \\) and \\[ ... \\] for inline and block maths respectively.
-Example of `\[ \frac{1}{n^{2}} \]`: \[ \frac{1}{n^{2}} \]
+- The fisrt part (below) is a configuration script for MathJax which specifies that inline mathematics should be delimited by the characters "$" or "\(" and "\)" and that it should process escape characters. This will ensure that mathematical equations written in TeX are properly formatted and displayed within the HTML document:
+    ```html
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+        }
+        });
+    </script>
+    ```
+- The second part, pulls a copy of MathJax JavaScript library from its respective CDN (group of distributed servers to allow the display of mathematical equations and formulas in HTML web pages,     The `TeX-AMS-MML_HTMLorMML` expression is a configuration option for MathJax, specifying the format in which the equations should be displayed:
+    ```
+    <script type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    ```
+Finally, note that the order of these two parts play a role in correctly rendering mathematical
+expression in html using jekyll.
 
 Easy right? 😀
+
+### Sources:
+- https://tex.stackexchange.com/a/27656
+- https://docs.mathjax.org/en/v1.1-latest/options/tex2jax.html 
