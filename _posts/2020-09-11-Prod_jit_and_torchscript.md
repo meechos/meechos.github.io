@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deep Learning in Produnction, eager model and graph execution
+title: Deep Learning in production, eager model and graph execution
 permalink: /Prod_jit_and_torchscript
 tags: Deep Learning, Benchmarking
 ---
