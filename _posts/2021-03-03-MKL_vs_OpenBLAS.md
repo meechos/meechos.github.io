@@ -1,10 +1,10 @@
 ---
 layout: page
-title: MKL_vs_OpenBLAS
+title: Accelerated Linear Algebra Libraries (MKL vs OpenBLAS)
 permalink: /MKL_vs_OpenBLAS
 ---
 
-# Accelerated Linear Algebra Libraries
+# 
 
 ## 1. BLAS background
 Accelerated Linear Algebra Libraries, also mostly known as Basic Linear Algebra Subprograms (BLAS), are a set of low-level routines for performing common linear algebra operations such as vector addition, scalar multiplication, dot products, linear combinations, and matrix multiplication. The implementations are often optimized for speed for example by taking advantage of special floating point hardware such as vector registers or SIMD instructions. Using them can bring substantial performance benefits. 

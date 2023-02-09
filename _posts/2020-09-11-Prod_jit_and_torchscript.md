@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Prod_jit_and_torchscript
+title: Deep Learning in Produnction, eager model and graph execution
 permalink: /Prod_jit_and_torchscript
 ---
-
-# Deep Learning in Produnction, JIT and Python dependencies
 
 In computing, just-in-time (JIT) compilation (also dynamic translation or run-time compilations) is a way of executing computer code that involves compilation during execution of a program (at run time) rather than before execution. 
 
