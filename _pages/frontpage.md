@@ -8,7 +8,7 @@ list_title: " "
 <!-- ![](../assets/imgs/prof_pic.jpg) -->
 
 <p align="center">
-  <img src="../assets/imgs/prof_pic.jpg"  width="95%"/>
+  <img src="../assets/imgs/prof_pic.jpg"  width="105%"/>
 </p>
 
 [gh-site]: https://pages.github.com/
