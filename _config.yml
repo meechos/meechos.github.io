@@ -1,5 +1,5 @@
 title: Dimitris Fotis Sakellariou
-description: Posts as sanity checks
+description: Thoughts as sanity checks
 author: "Dimitris Fotis Sakellariou"
 
 theme: minima
@@ -20,7 +20,7 @@ rss: rss
 show_excerpts: true
 
 minima:
-  date_format: "%Y-%m-%d"
+  date_format: "%d-%m-%Y"
 
 # Minima: custom header links
 header_pages:
