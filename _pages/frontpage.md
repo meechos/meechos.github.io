@@ -1,17 +1,14 @@
 ---
 permalink: /
 layout: home
-title: Hey anon, 👋🏻
-list_title: 'Some thoughts as sanity checks.'
----
+title: 
+list_title: 
 
-I am a neuroengineer and AI scientist with a background in physics and digital signal processing. I am interested in decoding brain function using data driven paradigms in order to inform Large Scale Models.
-I am the developer of [Neurocraft, the Microscale Neuroengineering Platform](https://github.com/Neurocraft/neurocraft).
 
 <!-- ![](../assets/imgs/prof_pic.jpg) -->
 
 <p align="center">
-  <img src="../assets/imgs/prof_pic.jpg"  width="30%"/>
+  <img src="../assets/imgs/prof_pic.jpg"  width="70%"/>
 </p>
 
 [gh-site]: https://pages.github.com/
