@@ -12,7 +12,7 @@ The process of padding involves adding zeros (or some other value) to the end of
 
 Despite that the reccurent layers network ignores the padded zeros during training, when attentive layers are stacked on top of recurrency things get messy. 
 
-![image](https://user-images.githubusercontent.com/429321/220680328-51beef43-7a14-4d72-a3bf-e37e0c7abdcb.png)
+![image](https://user-images.githubusercontent.com/429321/220701296-7a0d50e7-5540-41d6-a766-bb9ce347f895.png)
 
 In specific the source of incorrecntness originates the fact that:
 - Theoretically, attention should not be paid to tokens that have been arbitrarily appended, given that their role is enabling batch calculation during training.
@@ -59,13 +59,47 @@ print(b) # tensor([0.2689, 0.7311, 0.0000, 0.0000])
 ```
 As seen in the example code above, the attention weights sum up to $1$. 
 
-### Methodology B: requires_grad=False for `<pad>` elements
+### 2: Freezing of Attention Weight Neurons 
 
-In this methodology, we propose to set the `requires_grad` attribute to `False` for the padded tokens. By doing so, the gradients will not be calculated for the padded tokens during backpropagation.
+In this methodology, the idea is to freeze the set of nodes in the computational graph that abide a certain set of characteristics. Particularly, we would like to freeze the neurons that respond to attention weights of padded tokens.
+
+In a neural network, freezing a neuron or a layer means to fix its weights or parameters, effectively preventing them from being updated during the training process. This is typically done to preserve important features learned in the earlier stages of training, or to avoid overfitting on a small dataset how ever here the process could be leveraged to set a set of attention weights to zero and deprive those from changing their value during training.
+
+### 2.1 Implementation details
+
+In pytorch, users can freeze a layer using the designated `TORCH.TENSOR.REQUIRES_GRAD` flag.
 
 ```python
-x = torch.randn(2, 3)
-pad = torch.zeros(2, 3)
+score_vector = torch.tensor([1, 2, 3, 4],dtype=torch.float, requires_grad=True)
+```
+
+However, here we would require __partial freezing__ of the `score_vector`. In order to achieve that, we could recreate the `score_vector` by concatenating or stacking a tensor that does receive updates (meaningfull attention weights) and a tensor that does not (padding attention weights).
+
+```python
+mport torch 
+
+attn_real = torch.randn((2, 3), requires_grad=True)
+print(attn_real)
+attn_pad = torch.zeros((2, 2), requires_grad=False)
+print(attn_pad)
+
+>>>
+tensor([[-1.6349, -0.8626,  0.3347],
+        [-0.9115,  0.9382,  0.5463]], requires_grad=True)
+tensor([[0., 0.],
+        [0., 0.]])
+        
+score_vector = torch.cat((attn_real,attn_pad), 1)
+print(score_vector)
+
+>>>
+tensor([[-1.6349, -0.8626,  0.3347,  0.0000,  0.0000],
+        [-0.9115,  0.9382,  0.5463,  0.0000,  0.0000]], grad_fn=<CatBackward0>)
+```
+
+Calling `.is_leaf` on the `score_vector` would return `False` indicating that this object is created as a result of a concatenation operation that originates the two differently initialised vectors, with and without receiving updates respectively.
+
+Although the example above is illustrative of the high-level idea, the methodology is practically impossible to apply to our use case, that is variable length of source inputs. Specifically, a variable length of source inputs means that the number of pad tokens appended per input would have to be different. Consequently, the mini-batch training would be deemed impossible given we would have to piece together a different computational graph per training example. Essentially, this methodology would defeat its ultimate purpose that is, batch training.
 
 ### References
 
@@ -73,6 +107,9 @@ The following references were used to develop the proposed methodologies:
 
 - https://pytorch.org/docs/stable/generated/torch.Tensor.masked_fill_.html#torch.Tensor.masked_fill_
 - https://stats.stackexchange.com/questions/598239/how-is-padding-masking-considered-in-the-attention-head-of-a-transformer
+- https://pytorch.org/docs/stable/generated/torch.cat.html
+- https://pytorch.org/docs/stable/generated/torch.Tensor.is_leaf.html#torch.Tensor.is_leaf
+- https://pytorch.org/docs/master/notes/autograd.html
 - https://charon.me/posts/pytorch/pytorch_seq2seq_4/
 - https://juditacs.github.io/2018/12/27/masked-attention.html
 
