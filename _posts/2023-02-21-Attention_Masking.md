@@ -21,7 +21,7 @@ Despite that the reccurent layers network ignores the padded zeros during traini
 
 In specific the source of in-correctness stems from the fact that:
 - Theoretically, attention should not be paid to tokens that have been arbitrarily appended, given that their role is enabling batch calculation during training.
-- Technically, the sum of attention weights (per attention vector) should sum up to one $\sum{a_{ij}} = 1$. The probability $a_{ij}$ reflects the importance of the annotation $h_j$ with respect to the previous hidden state s_{i-1} in deciding the next state $s_i$ and generating $y_i$ [Bahdanau 2015]. 
+- Technically, the sum of attention weights (per attention vector) should sum up to one $\sum{a_{ij}} = 1$. The probability $a_{ij}$ reflects the importance of the annotation $h_j$ with respect to the previous hidden state $s_{i-1}$ in deciding the next state $s_i$ and generating $y_i$ [Bahdanau 2015]. 
 
 In essence, this means that zeroing out the attention weights that link with padding symbols will break the assumption that the sum of weights add up to one.
 
