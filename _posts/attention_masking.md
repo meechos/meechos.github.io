@@ -1,4 +1,9 @@
-# Effective Attention Scoring for Padded Inputs
+---
+layout: page
+title: Effective Attention Scoring for Padded Inputs
+permalink: /Attention_masking
+tags: Deep Learning
+---
 
 Commonly, attention layers will learn a weight for every token of a sequential input, so that $n_{attention_weights} = n_{input_tokens}$. Although it is reasonable to allow the model to learn how much each token in a sequence should contribute to model prediction, $Padding$ messes up this assumption. Let's find out.
 
