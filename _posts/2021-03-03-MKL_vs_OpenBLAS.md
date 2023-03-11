@@ -241,7 +241,7 @@ In this simple demonstration we can see that MKL is performing significantly bet
 
 Please note, this demo does not constitute a holistic benchmarking procedure but rather an example of how different BLAS libraries can be built against and used in Numpy.
 
-For benchmarking of the libraries across engines with a variety of memory sizes and processors see 
+For benchmarking of the libraries across engines with a variety of memory sizes and processors see here:
 - https://github.com/tmolteno/necpp/issues/18
 - https://shaalltime.medium.com/benchmark-numpy-with-openblas-and-mkl-library-on-amd-ryzen-3950x-cpu-96184f91057f
 
