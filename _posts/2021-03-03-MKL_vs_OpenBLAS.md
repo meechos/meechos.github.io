@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Accelerated Linear Algebra Libraries (MKL vs OpenBLAS)
+title: Accelerated Linear Algebra Libraries (MKL and OpenBLAS)
 permalink: /MKL_vs_OpenBLAS
 tags: Benchmarking
 ---
