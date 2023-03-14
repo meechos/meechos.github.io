@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EEG in Python: a landscape analysis
+title: EEG libraries in Python, a landscape analysis
 permalink: /EEG_libraries
 tags: Neurotech
 ---
