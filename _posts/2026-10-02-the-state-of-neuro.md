@@ -47,6 +47,8 @@ EEG is indeed the indispensable, ubiquitous test for neurology and particularly 
 
 By overcoming these bottlenecks, the promise of foundation models is an opportunity to decode neural syntax and transform EEG into a universal window into brain function.
 
+*Thanks to Michalis Koutroumanidis, Yaqub Alwan, Kyriacos Xanthos, Cole Murphy, Sahil Zubair, Victor Alvarez, and Clarissa Iglesias for reading drafts of this.*
+
 ## References
 
 Buzsáki, G., 2010. Neural syntax: cell assemblies, synapsembles, and readers. *Neuron*, 68(3), pp.362–385.
